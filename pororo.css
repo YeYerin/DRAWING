@@ -54,7 +54,6 @@ body {
     left: 141px;
     border-radius: 50%;
     box-shadow: 25px 8px 0 0 #F8E70E;
-    
 }
 .helmet::before {
     left: 23px;
@@ -72,7 +71,6 @@ body {
     border-radius: 10% 10% 20% 20%;
 }
 /* 헬멧 햇빛가리개 부분 */
-
 .helmet2::before {
     content:"";
     position:absolute;
@@ -150,7 +148,7 @@ body {
     left: 118px;
     background-color: white;
     border-radius: 50%;
-    box-shadow: 0px -2px 1px black;
+    box-shadow: 0px -1px 1px black;
     z-index: 100;;
 }
 .glasses2::before {
@@ -198,11 +196,11 @@ body {
 }
 .mouth::before {
     content: "";
-    width: 47px;
+    width: 48px;
     height: 20px;
     position: absolute;
     top: 12px;
-    left:  2px;
+    left:  1px;
     background: #F8B013;
     border-radius: 50%;
     box-shadow: 1px 1px 0 #942414, -1px 1px 0 #942414;
