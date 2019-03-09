@@ -1,0 +1,209 @@
+body {
+    height:500px;
+    padding:50px;
+}
+/* 얼굴 파란부분 */
+.head {
+    width: 200px;
+    height: 200px;
+    background: #1748D9;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+/* 얼굴 하얀부분 */
+.face {
+    content:"";
+    position:absolute;
+    width:105px;
+    height: 140px;
+    background:white;
+    top:128px;
+    left:127px;
+    transform:rotate(60deg);
+    border-radius: 50%;
+}
+.face::before {
+    content:"";
+    position:absolute;
+    width:105px;
+    height: 140px;
+    background:white;
+    top:35px;
+    left: -20px;
+    transform:rotate(-120deg);
+    border-radius: 50%;
+}
+/* 헬멧 윗부분 */
+.helmet {
+    width: 198px;
+    height: 80px;
+    position: relative;
+    top: -5px;
+    background: #F8E70E;
+    border-radius: 100px 100px 0px 0px;
+    box-shadow: 0 0.5px 0 black, -0.5px -0.5px 0 black,0.5px -0.5px black;
+}
+/* 헬멧 귀부분 */
+.helmet::before,
+.helmet::after {
+    content:"";
+    position:absolute;
+    width:35px;
+    height: 130px;
+    top: 35px;
+    left: 141px;
+    border-radius: 50%;
+    box-shadow: 25px 8px 0 0 #F8E70E;
+    
+}
+.helmet::before {
+    left: 23px;
+    top: 50px;
+    transform: rotate(180deg);
+}
+/* 헬멧 머리쪽 파란 부분 */
+.helmet2 {
+    width: 80px;
+    height: 80px;
+    top: -85px;
+    left: 60px;;
+    position: relative;
+    background: #1748D9;
+    border-radius: 10% 10% 20% 20%;
+}
+/* 헬멧 햇빛가리개 부분 */
+
+.helmet2::before {
+    content:"";
+    position:absolute;
+    width:170px;
+    height: 20px;
+    top: 71px;
+    left: -45px;
+    background:#FCCC04; 
+    border-radius: 40% 40% 50% 50%;
+    box-shadow: 0 1px 2px black;    
+    z-index: 101;
+}
+/* P 글씨 */
+.p {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    top: -175px;
+    text-align: center;
+    font-family: 'Baloo', cursive;
+    color: #FC7C04;
+    font-size: 45pt;
+    z-index: 1;
+    text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, -1px -1px 0;
+}
+
+
+/* 안경 가운데 부분 */
+.glasses {
+    width: 30px;
+    height: 16px;
+    background: #FCA404;
+    position: relative;
+    top: -149px;
+    left: 85px;
+    box-shadow: 0 0.5px 0 black;
+    z-index: 1;
+}
+/* 안경테 부분 */
+.glasses::before,
+.glasses::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    background-color: #FC7C04;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px black;
+}
+
+.glasses::before {
+    left: -60px;
+}
+/* 안경다리 부분 */
+.glasses2 {
+    width: 207px;
+    height: 16px;
+    background: #FC7C04;
+    position: absolute;
+    top: 170px;
+    left: 55px;
+    border-radius: 20%;
+    box-shadow: 0 0.5px 0 black;
+}
+/* 안경알 부분 */
+.glasses2::before,
+.glasses2::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+    left: 118px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px -2px 1px black;
+    z-index: 100;;
+}
+.glasses2::before {
+    left: 40px;
+}
+/*눈동자*/
+.eye1, .eye2 {
+    width: 17px;
+    height: 17px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    top: -163px;
+    left: 60px;
+    z-index: 200;
+}
+.eye2 {
+    position: absolute;
+    left: 185px;
+    top: 172px;
+}
+/*눈동자반짝*/
+.eye1::before,
+.eye2::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    background: white;
+    border: 0.5px solid black;
+}
+
+.mouth {
+    width: 50px;
+    height: 50px;
+    background: #F8B013;
+    border-radius: 50%;
+    position: relative;
+    top: -160px;
+    left: 75px;
+    box-shadow: 0 1px 2px black;
+}
+.mouth::before {
+    content: "";
+    width: 47px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    left:  2px;
+    background: #F8B013;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0 #942414, -1px 1px 0 #942414;
+}
